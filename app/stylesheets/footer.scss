@@ -1,0 +1,51 @@
+$hover-color: #f94949;
+
+#main-footer {
+	background-color: #f5f5f5;
+	padding: 20px 0;
+	.info {
+		h4 {
+			text-transform: uppercase;
+		}
+		i {
+			margin-right: 5px;
+			color: #f94949;
+		}
+	}
+	.subcribe {
+		.form-group {
+			position: relative;
+			input {
+				border-radius: 0;			
+			}
+			a {
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				padding: 7px;
+				background-color: $hover-color;
+				text-decoration: none;
+				color: #fff;
+			}
+		}
+		.social-icon {
+			i {
+				margin: 0 5px;
+				font-size: 20px;
+				color: #080808;
+			}
+			a:hover {
+				i.fa-facebook {
+					color: #3b5998;
+				}
+				i.fa-youtube, i.fa-google-plus {
+					color: #c3181e;
+				}
+				i.fa-pinterest {
+					color: #bd081c;
+				}
+			}
+		}
+	}
+}

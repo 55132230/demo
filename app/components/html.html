@@ -1,0 +1,22 @@
+<div className="news-image col-md-3">
+	<img src={this.props.value.image} alt={this.props.value.title} className="responsive" style={{width: "100%"}} />
+</div>
+<div className="news-content">
+	<h4><Link to={{this.props.value.link}}>{this.props.value.title}</Link></h4>
+	<div className="show-content">
+		<p>{this.props.value.content}</p>
+	</div>
+	<div className="meta">
+		<p>Viết bởi <Link to={{this.props.value.link_author}}>{this.props.value.author}</Link>, Đăng ngày <span className="date">{this.props.value.created_date}</span></p>
+	</div>
+</div>
+
+<div className="news-content">
+	<h4><Link to={{this.props.value.link}}>{this.props.value.title}</Link></h4>
+	<div className="show-content">
+		<p>{this.props.value.content}</p>
+	</div>
+	<div className="meta">
+		<p>Viết bởi <Link to={{this.props.value.link_author}}>{this.props.value.author}</Link>, Đăng ngày <span className="date">{this.props.value.created_date}</span></p>
+	</div>
+</div>

@@ -1,0 +1,163 @@
+$text_size: 17px;
+$text_line_height: 1.4em;
+$hover_color: #f94949;
+$primary_color: #898989;
+$black_color: #080808;
+$white-color: #fff;
+
+#home {
+	.block {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		h2 {
+			text-transform: uppercase;
+			color: $hover_color;
+			margin: 20px;
+		}
+	}
+	.product-type {
+		.img-block {
+			position: relative;
+
+			p {
+				position: absolute;
+				z-index: 1;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 100%;
+			}
+			a {
+				text-decoration: none;
+				color: #fff;
+				padding: 10px 30px;
+				border: 1px solid #fff;
+				font-size: 17px;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+			a:hover {
+				background: #000;
+			}
+			img {
+				width: 100%;
+			}
+		}
+		.line-1:first-child {
+			margin-bottom: 9%;
+		}
+	}
+	.item-block {
+		.item-image {
+			padding: 50px 0;
+			position: relative;
+			border: 1px solid #b5b2b2;
+			border-radius: 10px;
+			img {
+				margin: auto;
+			}
+			p {
+				position: absolute;
+				z-index: 1;
+				width: 100%;
+				top: 50%;
+				transform: translateY(-50%);
+				text-align: center;
+			}
+			span.cart-icon {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				display: none;
+			}
+			a {
+				text-decoration: none;
+				color: #fff;
+				padding: 10px 30px;
+				border: 1px solid #fff;
+				font-size: 17px;
+				font-weight: bold;
+				text-transform: uppercase;
+				display: none;
+			}
+		}
+		.item-image:hover {
+			background: #000;
+			opacity: 0.9;
+			a {
+				display: block;
+			}
+			a:hover {
+				color: $black_color;
+				background: #fff;
+			}
+			span.cart-icon {
+				color: $hover_color;
+				display: block;
+				bottom: 9px;
+				left: 12px;
+				font-size: 18px;
+			}
+		}
+		.item-info {
+			text-align: center;
+			h4 > a {
+					text-decoration: none;
+					color: $primary_color;
+			}
+			span.price {
+				color: $hover_color;
+			}
+		}
+	}
+	.product {
+		margin-bottom: 30px;
+	}
+	p.loadmore {
+		a {
+			text-decoration: none;
+			padding: 10px 20px;
+			border: 1px solid $black_color;
+			color: $black_color;
+			font-size: 20px;
+			text-transform: uppercase;
+		}
+		a:hover {
+			background: $black_color;
+			color: $white-color;
+		}
+	}
+	#top-news-slide {
+		color: $white-color;
+		.item {
+			padding: 50px 0;
+		}
+		h2 {
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+		.info {
+			h3 {
+				margin-top: 0;
+				margin-bottom: 30px;
+				padding-bottom: 10px;
+				position: relative;
+			}
+			h3::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 50%;
+				height: 2px;
+				background: $white-color;
+			}
+			p {
+				line-height: 1.8em;
+			}
+			a {
+				color: $white-color;
+				text-decoration: none;
+			}
+		}
+	}
+}
